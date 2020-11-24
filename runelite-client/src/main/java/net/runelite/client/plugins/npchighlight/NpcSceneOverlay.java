@@ -54,7 +54,7 @@ public class NpcSceneOverlay extends Overlay
 {
 	// Anything but white text is quite hard to see since it is drawn on
 	// a dark background
-	private static final Color TEXT_COLOR = Color.WHITE;
+	private static final Color TEXT_COLOR = Color.PINK;
 
 	private static final NumberFormat TIME_LEFT_FORMATTER = DecimalFormat.getInstance(Locale.US);
 
@@ -180,7 +180,13 @@ public class NpcSceneOverlay extends Overlay
 			renderPoly(graphics, color, southWestTilePoly);
 		}
 
-		if (config.drawNames() && actor.getName() != null)
+		if (config.drawNames())
+		{
+			if actor.getName() == "*Cat") && config.catMelon() != null) {
+				String npcName Text("Synthetic Catmelon"))
+			}
+		}
+				else if actor.getName() != null)
 		{
 			String npcName = Text.removeTags(actor.getName());
 			Point textLocation = actor.getCanvasTextLocation(graphics, npcName, actor.getLogicalHeight() + 40);

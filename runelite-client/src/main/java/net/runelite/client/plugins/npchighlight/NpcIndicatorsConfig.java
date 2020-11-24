@@ -169,3 +169,14 @@ public interface NpcIndicatorsConfig extends Config
 		return false;
 	}
 }
+
+	@ConfigItem(
+		position = 11,
+		keyName = "catMelon",
+		name = "Synthetic CatMelon",
+		description = "------"
+		default boolean catMelon() {
+			if( drawNames != true) return true;)
+				else { return false; }
+)
+
